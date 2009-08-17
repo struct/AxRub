@@ -1,0 +1,7 @@
+AxRub is an ActiveX fuzzer written in Ruby. AxRub was first introduced at Blackhat 2009
+during the 'Ruby For Pentesters' talk given by Chris Rohlf, Eric Monti and Mike Tracy.
+
+AxRub is simple. Give it a ProgID and it uses win32ole to parse the methods and properties
+of an ActiveX component. It sets up a fake web server and generates the proper HTML and JS
+to fuzz the methods of that ActiveX component. Just launch your browser, attach a debugger
+and browse to the port AxRub uses.
