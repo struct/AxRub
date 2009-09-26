@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 ## AxRub 1.0
-## Tested with Ruby 1.8.6 and 1.9
+## Tested with Ruby 1.8.6 and 1.9.0
 
 require 'socket'
 require 'win32ole'
