@@ -14,7 +14,6 @@ Future enhancements will include:
 	o Better method argument type handling
 	o More fuzzing test cases and enhancements
 	o New methods for manually creating fuzzing test cases
---
 
 AxRub was inspired by earlier work such as axman by HdMoore
 http://www.metasploit.com/users/hdm/tools/axman/
