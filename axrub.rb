@@ -80,7 +80,7 @@ class AxRub
 	    	    args = p_ary.dup
 
 				meth.params.map do |p|
-				if p.ole_type !~ /I1|I2|I4|I8|R4|R8|CY|DATE||UINT|UI2|UI4|INT|LONG|PTR|DISPPARAMS|VARIANT|EXCEPINFO|GUID|VOID|BOOL|ERROR|HRESULT|DECIMAL/i
+				if p.ole_type !~ /I1|I2|I4|I8|R4|R8|CY|DATE|UINT|UI2|UI4|INT|LONG|PTR|DISPPARAMS|VARIANT|EXCEPINFO|GUID|VOID|BOOL|ERROR|HRESULT|DECIMAL/i
 						0.upto(psz-1) do |i|
 							args[i] = "\"a\""
 						end
@@ -108,7 +108,7 @@ class AxRub
 								listen("axobj.#{meth.name}(#{args.join(', ')});")
 							end
 							break
-						when /I1|I2|I4|I8|R4|R8|CY|DATE||UINT|UI2|UI4|INT|LONG|PTR|DISPPARAMS|VARIANT|EXCEPINFO|GUID|VOID|BOOL|ERROR|HRESULT|DECIMAL/i
+						when /I1|I2|I4|I8|R4|R8|CY|DATE|UINT|UI2|UI4|INT|LONG|PTR|DISPPARAMS|VARIANT|EXCEPINFO|GUID|VOID|BOOL|ERROR|HRESULT|DECIMAL/i
 							0.upto(@ints.size) do
 								args[idx] = @ints.next
 								listen("axobj.#{meth.name}(#{args.join(', ')});")
