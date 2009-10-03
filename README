@@ -8,6 +8,7 @@ and browse to the port AxRub uses.
 
 Future enhancements will include:
 
+	o Use library at http://www.watir.com to handle popups
 	o Probably a better web server, maybe 'Sinatra'
 	o Better win32ole support for Ruby 1.9
 	o Better method/property parsing
