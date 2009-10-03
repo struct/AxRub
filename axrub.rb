@@ -195,7 +195,7 @@ end
 ## A test harness
 if $0 == __FILE__
 	ax = AxRub.new(ARGV[0], 'blacklist.txt')
-#	ax.blacklist
+	ax.blacklist
 	ax.launch_ie
 	ax.fuzz
 end
