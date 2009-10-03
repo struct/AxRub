@@ -28,7 +28,7 @@ class AxRub
 		end
 
 		puts "\nProperties Found:\n"
-		@ax_props.each do { |p| puts "#{p}" end
+		@ax_props.each { |p| puts "#{p}" }
 
 		begin
 			@web_server = TCPServer.new(nil, '8080')
