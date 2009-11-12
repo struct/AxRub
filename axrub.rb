@@ -114,10 +114,6 @@ class AxRub
 								listen("axobj.#{meth.name}(#{args.join(', ')});")
 							end
 							0.upto(@bytes.size) do
-								args[idx] = @bytes.next
-								listen("axobj.#{meth.name}(#{args.join(', ')});")
-							end
-							0.upto(@bytes.size) do
 								args[idx] = "\"#{@bytes.next}\""
 								listen("axobj.#{meth.name}(#{args.join(', ')});")
 							end
@@ -145,9 +141,6 @@ class AxRub
 			end
 			0.upto(@ints.size) do
 				listen("axobj.#{prop} = #{@ints.next};");
-			end
-			0.upto(@bytes.size) do
-				listen("axobj.#{prop} = \"#{@bytes.next}\";")
 			end
 			0.upto(@bytes.size) do
 				listen("axobj.#{prop} = #{@bytes.next};")
